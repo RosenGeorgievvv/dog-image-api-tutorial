@@ -6,10 +6,8 @@ const getNewDog = () => {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(response => response.json())
         .then(json => {
-            dogImageDiv.innerHTML = `<img src='${json.message}' height=200 width= 200/>`
+            dogImageDiv.innerHTML = `<img src='${json.message}' height=400 width= 400/>`
         })
 }
 
-dogButton.onclick = () =>{
-    getNewDog()
-}
+dogButton.onclick = () => getNewDog()
