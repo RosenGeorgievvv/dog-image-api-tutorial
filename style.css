@@ -1,0 +1,9 @@
+html, body{
+    background-color: skyblue;
+}
+
+button{
+    display: block;
+    margin: auto;
+    font-size: 15px;
+}
